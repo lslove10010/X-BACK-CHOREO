@@ -18,6 +18,7 @@ RUN apt-get update &&\
     usermod -aG sudo choreouser &&\
     chmod +x web.js entrypoint.sh nezha-agent ttyd &&\
     npm install -r package.json
+EXPOSE 3000    
 
 ENTRYPOINT [ "node", "server.js" ]
 
