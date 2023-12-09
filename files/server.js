@@ -1,6 +1,6 @@
 const username = process.env.WEB_USERNAME || "admin";
 const password = process.env.WEB_PASSWORD || "password";
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 const url = `http://127.0.0.1:${port}`;
 const express = require("express");
 const app = express();
